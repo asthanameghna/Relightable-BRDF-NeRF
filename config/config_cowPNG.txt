@@ -1,0 +1,36 @@
+expname = exp001_cowPNG
+basedir = ./logs
+datadir = ./data/nerf_llff_data/cowPNG
+lightdirsdir = ./data/nerf_llff_data/cowPNG/lightdirs.npy
+spherifydir = ./c2w_matricies/spherify_c2w_cowPNG.npy
+dataset_type = llff
+
+factor = 1
+llffhold = 80
+multires = 8
+
+N_rand = 1024
+N_samples = 64
+N_importance = 32
+i_img = 1000
+i_print = 1000
+i_weights = 20000
+i_video = 1000012
+i_testset = 100001
+
+use_viewdirs = True
+use_lightdirs = True
+multilightdirs = True
+raw_noise_std = 1.0
+ray_noise = 0.0
+
+sil_density_factor = 0.0
+binary_density_factor = 0.0
+
+
+spherify = True
+no_ndc = True
+lindisp = True
+
+
+white_bkgd = False
