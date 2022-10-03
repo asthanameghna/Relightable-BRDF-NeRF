@@ -1,0 +1,6 @@
+Please refer to the following Google Drive link and add to this folder for retraining (please check the paths in individual .py file if the directory is not identified):
+
+https://drive.google.com/drive/folders/15HSym1ra28T2ZAuDDj8PaoM3jPL-yn0e?usp=sharing
+
+
+
