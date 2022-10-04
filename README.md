@@ -11,8 +11,8 @@ CONTENTS OF THIS PROJECT
 * Introduction
 * Folder Structrue
 * Requirements
-* Installation on Local Device
-* Running on Local Device
+* Installation
+* Running & Training
 * Results
 * Maintainers & Collaborators
 * Citation
@@ -72,6 +72,32 @@ This project requires the following modules:
  * [TensorFlow](https://www.tensorflow.org/install/pip)
  
  For exact versions, please refer to [requirements.txt](https://github.com/asthanameghna/Relightable-BRDF-NeRF/blob/main/requirements.txt).
+ 
+INSTALLATION
+------------
+ 
+ * Download the entire project either using git clone or download as zip option.
+
+ * Once the folder is on your local device, open a new terminal window check the version of python on you device using ```python -v``` and install the compatible pip version for it.
+ 
+ * Now check version of pip using ```pip -version``` and navigate to your project folder
+ 
+ * Install all the packages in requirements.txt using pip (links for each installation command provided above).
+ 
+ * Check for correct installation in your desired folder using the following commands:
+   ```$ python```
+   and it will show the follwing message:
+   ```
+   Python 3.8.8 (default, Apr 13 2021, 12:59:45) 
+   [Clang 10.0.0 ] :: Anaconda, Inc. on darwin
+   Type "help", "copyright", "credits" or "license" for more information.
+   >>>
+    ```
+   Use command
+   ```
+   import tensorflow
+   ```
+   If the respose does not provide any error you have successfully installed all the      dependencies.
 
 MAINTAINERS & COLLAOBRATORS
 -----------
