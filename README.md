@@ -22,6 +22,12 @@ INTRODUCTION
 We propose to tackle the multiview photometric stereo problem using an extension of Neural Radiance Fields (NeRFs), conditioned on light source direction. The geometric part of our neural representation predicts surface normal direction, allowing us to reason about local surface reflectance. The appearance part of our neural representation is decomposed into a neural bidirectional reflectance function (BRDF), learnt as part of the fitting process, and a shadow prediction network (conditioned on light source direction) allowing us to model the apparent BRDF. This balance of learnt components with inductive biases based on physical image formation models allows us to extrapolate far from the light source and viewer directions observed during training. We demonstrate our approach on a multiview photometric stereo benchmark and show that competitive performance can be obtained with the neural density representation of a NeRF.
 
 
+
+https://user-images.githubusercontent.com/34877328/193870883-97d2ef5c-eb8c-4bdb-be90-1cf364900f51.mp4
+
+https://user-images.githubusercontent.com/34877328/193871194-a97326cf-3eff-4bf3-a927-532c7f754fc3.mp4
+
+
 FOLDER STRUCTURE
 ------------
 ```
