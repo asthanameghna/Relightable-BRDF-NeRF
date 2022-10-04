@@ -14,7 +14,7 @@ CONTENTS OF THIS PROJECT
 * Installation on Local Device
 * Running on Local Device
 * Results
-* Maintainers
+* Maintainers & Collaborators
 * Citation
 
 INTRODUCTION
@@ -60,6 +60,26 @@ FOLDER STRUCTURE
 └── top_view_renderer.py                 # Render top head views for trained model
 
 ```
+
+REQUIREMENTS
+------------
+This project requires the following modules:
+
+ * [pip](https://pip.pypa.io/en/stable/installation/)
+ * [numpy](https://pypi.org/project/numpy/)
+ * [ConfigArgParse](https://pypi.org/project/ConfigArgParse/)
+ * [imageio](https://pypi.org/project/imageio/)
+ * [TensorFlow](https://www.tensorflow.org/install/pip)
+ 
+ For exact versions, please refer to requirements.txt.
+
+MAINTAINERS & COLLAOBRATORS
+-----------
+
+Please reach out to us if you have any questions:
+ * [Meghna Asthana](https://www.cs.york.ac.uk/people/asthana) (University of York) 
+ * William Smith (University of York)
+ * Patrik Huber (University of York)
 
 CITATION
 ------------
