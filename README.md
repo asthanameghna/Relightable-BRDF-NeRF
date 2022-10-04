@@ -23,11 +23,6 @@ We propose to tackle the multiview photometric stereo problem using an extension
 
 
 
-https://user-images.githubusercontent.com/34877328/193870883-97d2ef5c-eb8c-4bdb-be90-1cf364900f51.mp4
-
-https://user-images.githubusercontent.com/34877328/193871194-a97326cf-3eff-4bf3-a927-532c7f754fc3.mp4
-
-
 FOLDER STRUCTURE
 ------------
 ```
@@ -104,6 +99,38 @@ INSTALLATION
    import tensorflow
    ```
    If the respose does not provide any error you have successfully installed all the      dependencies.
+   
+   
+RUNNING & TRAINING
+------------
+
+* For training any object, use the command:
+  ```
+  python relight_brdf_nerf.py --config config/config_bearPNG.txt
+  ```
+* For obtaining albedo, rgb, normals and shadow renderings, use the command:
+   ```
+  python get_normals.py      # make sure to use the correct model_xxxxx.npy for a particular object
+  ```
+
+https://user-images.githubusercontent.com/34877328/193870883-97d2ef5c-eb8c-4bdb-be90-1cf364900f51.mp4
+
+https://user-images.githubusercontent.com/34877328/193871194-a97326cf-3eff-4bf3-a927-532c7f754fc3.mp4
+
+## Generating poses for your own scenes
+
+### Don't have poses?
+
+We recommend using the `imgs2poses.py` script from the [LLFF code](https://github.com/fyusion/llff). Then you can pass the base scene directory into our code using `--datadir <myscene>` along with `-dataset_type llff`. You can take a look at the `config_bearPNG.txt` config file for example settings to use for a forward facing scene. For a spherically captured 360 scene, we recomment adding the `--no_ndc --spherify --lindisp` flags.
+
+### Already have poses!
+
+In `relight_brdf_nerf.py` and all other code, we use the same pose coordinate system as in OpenGL: the local camera coordinate system of an image is defined in a way that the X axis points to the right, the Y axis upwards, and the Z axis backwards as seen from the image.
+
+Poses are stored as 3x4 numpy arrays that represent camera-to-world transformation matrices. The other data you will need is simple pinhole camera intrinsics (`hwf = [height, width, focal length]`) and near/far scene bounds. Take a look at [our data loading code](https://github.com/asthanameghna/Relightable-BRDF-NeRF/blob/e5a2c7c3d4a6c89b19302188c46cbf24da87c50d/relight_brdf_nerf.py#L835) to see more.
+
+Our work has been inspired from the original [NeRF paper](https://arxiv.org/abs/2003.08934). You can check out their code [here](https://github.com/bmild/nerf).
+  
 
 MAINTAINERS & COLLAOBRATORS
 -----------
