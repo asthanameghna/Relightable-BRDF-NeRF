@@ -1,6 +1,6 @@
 # Relightable-BRDF-NeRF
 
-## [PAPER](https://arxiv.org/abs/2207.06793?context=cs) | [DATA](https://drive.google.com/drive/folders/15HSym1ra28T2ZAuDDj8PaoM3jPL-yn0e?usp=sharing) | [RESULTS](https://drive.google.com/drive/folders/1t1e1a_a7Rh2lOOAowqqJeTlBcKWK_6kZ?usp=sharing)
+## [PAPER](https://arxiv.org/abs/2207.06793?context=cs) | [DATA](https://drive.google.com/drive/folders/15HSym1ra28T2ZAuDDj8PaoM3jPL-yn0e?usp=sharing) | [RESULTS](https://drive.google.com/drive/folders/1UmjR9IvIQVioeeB-9xMt9TwMOTfrBmOL?usp=sharing)
 
 <img width="795" alt="Screenshot 2022-10-04 at 16 36 25" src="https://user-images.githubusercontent.com/34877328/193863236-8a1eac6a-db51-41a7-ba11-d0294072eb6f.png">
 
