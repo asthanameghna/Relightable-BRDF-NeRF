@@ -71,7 +71,7 @@ This project requires the following modules:
  * [imageio](https://pypi.org/project/imageio/)
  * [TensorFlow](https://www.tensorflow.org/install/pip)
  
- For exact versions, please refer to requirements.txt.
+ For exact versions, please refer to [requirements.txt](https://github.com/asthanameghna/Relightable-BRDF-NeRF/blob/main/requirements.txt).
 
 MAINTAINERS & COLLAOBRATORS
 -----------
